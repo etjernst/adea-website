@@ -4,6 +4,8 @@ _site/
 shots/
 # scraped source of the original site (kept local; outputs are committed)
 scrape/
+# raw downloaded figure originals (optimized versions are committed)
+assets/images/stories/_raw_*
 # python
 __pycache__/
 *.pyc

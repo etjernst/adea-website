@@ -550,6 +550,23 @@ figcaption, .figcredit {
 .bar__legend span { font-size: 0.8rem; color: var(--slate); display: flex; align-items: center; gap: 0.4rem; }
 .bar__legend i { width: 11px; height: 11px; display: inline-block; }
 
+/* figures from the source paper */
+.story__figure { margin: 2.6rem 0; }
+.story__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+.story__figure figcaption {
+  font-size: 0.82rem;
+  color: var(--slate-light);
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 0.7rem;
+}
+
 /* pull quote */
 .pullquote {
   margin: 3rem 0;
