@@ -20,7 +20,6 @@ budget_bar:
     - {label: Saved, value: 919, color: "#a85d3a"}
     - {label: Spent in Australia, value: 566, color: "#6f6c5f"}
     - {label: Sent home, value: 459, color: "#c79a7e"}
-pull_quote: Negative shocks are passed through to families immediately, while positive shocks tend to be absorbed by the migrant.
 paper_url: https://devpolicy.org/publications/negative-shocks-travel-home/
 paper_title: "Negative shocks travel home"
 source_url: https://devpolicy.org/palm-workers-save-more-than-you-think-but-bad-weeks-still-hit-home-20260518/
@@ -44,6 +43,10 @@ Higher earnings do not translate into proportionally larger transfers. Workers w
   <img src="../assets/images/stories/fig1-incomes-remittances.png" alt="Density plots of fortnightly income and remittances">
   <figcaption>Figure 1. Fortnightly income sits well above remittances (top panel). The remittance distribution looks much the same whether the worker earns below or above median income (bottom panel): higher earners save the surplus rather than send proportionally more. Source: Edwards and Stambolie.</figcaption>
 </figure>
+
+<blockquote class="pullquote pullquote--center">
+  <p>&ldquo;Negative shocks are passed through to families immediately, while positive shocks tend to be absorbed by the migrant.&rdquo;</p>
+</blockquote>
 
 ## Bad weeks hit home, good weeks do not
 

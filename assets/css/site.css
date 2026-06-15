@@ -582,6 +582,28 @@ figcaption, .figcredit {
   max-width: none;
   margin: 0;
 }
+/* centered statement-style quote for mid-story placement */
+.pullquote--center {
+  border-left: none;
+  padding: 1.4rem 0;
+  margin: 3.6rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.pullquote--center p { font-size: clamp(1.7rem, 3.6vw, 2.6rem); max-width: 24ch; margin: 0 auto; }
+.pullquote--center p::before { content: ''; }
+
+/* drop cap opening the story body */
+.story__body > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 3.3em;
+  line-height: 0.78;
+  float: left;
+  margin: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
 
 /* source / disclosure box at the end */
 .story__source {
