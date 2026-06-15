@@ -556,8 +556,6 @@ figcaption, .figcredit {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid var(--border);
-  background: var(--white);
 }
 .story__figure figcaption {
   font-size: 0.82rem;

@@ -87,3 +87,55 @@
   if (c2) c2.addEventListener('click', clear);
   apply();
 })();
+
+// Count-up: the story stat numbers tick up from zero when scrolled into view.
+// Respects prefers-reduced-motion (shows final values, no animation).
+(function () {
+  var grid = document.querySelector('.stat-grid');
+  if (!grid) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var values = Array.prototype.slice.call(grid.querySelectorAll('.stat__value'));
+
+  // parse "A$1,943" / "~90%" / "0.7" into {prefix, target, suffix, decimals, comma}
+  var parsed = values.map(function (el) {
+    var text = el.textContent;
+    var m = text.match(/^(\D*?)([\d,]*\.?\d+)(\D*)$/);
+    if (!m) return null;
+    var numstr = m[2];
+    return {
+      el: el, prefix: m[1], suffix: m[3],
+      target: parseFloat(numstr.replace(/,/g, '')),
+      decimals: numstr.indexOf('.') !== -1 ? numstr.split('.')[1].length : 0,
+      comma: numstr.indexOf(',') !== -1,
+      final: text,
+    };
+  });
+
+  function fmt(p, value) {
+    var s = value.toFixed(p.decimals);
+    if (p.comma) s = s.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return p.prefix + s + p.suffix;
+  }
+
+  function run() {
+    var start = null, dur = 1100;
+    function frame(ts) {
+      if (start === null) start = ts;
+      var t = Math.min(1, (ts - start) / dur);
+      var ease = 1 - Math.pow(1 - t, 3);
+      parsed.forEach(function (p) { if (p) p.el.textContent = fmt(p, p.target * ease); });
+      if (t < 1) requestAnimationFrame(frame);
+      else parsed.forEach(function (p) { if (p) p.el.textContent = p.final; });
+    }
+    requestAnimationFrame(frame);
+  }
+
+  if (reduce || !('IntersectionObserver' in window) || !parsed.some(Boolean)) return;
+  parsed.forEach(function (p) { if (p) p.el.textContent = fmt(p, 0); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { run(); io.disconnect(); }
+    });
+  }, { threshold: 0.4 });
+  io.observe(grid);
+})();
