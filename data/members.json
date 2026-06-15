@@ -228,10 +228,11 @@
         "India",
         "Philippines"
       ],
-      "link": "/",
+      "link": "https://www.ricardodahis.com/",
       "photo": "members/ricardo-dahis.jpg",
       "group": "members",
-      "institution": "Monash University, AUS"
+      "institution": "Monash University, AUS",
+      "link_source": "researched"
     },
     {
       "name": "Adeline Delavande",

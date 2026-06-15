@@ -61,6 +61,17 @@ def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+def clean_link(href):
+    """Drop placeholder/internal links (e.g. '/', '', ausdevea.org) so a card
+    never renders a profile button that points back to the host site root."""
+    href = (href or "").strip()
+    if not href or href == "/" or href.startswith("/") or href.startswith("#"):
+        return ""
+    if "ausdevea" in href:
+        return ""
+    return href
+
+
 def canon_topic(t):
     return TOPIC_CANON.get(t.lower(), t)
 
@@ -134,7 +145,7 @@ def parse_member(li, group, photo_map):
     rec = {
         "name": name, "slug": slugify(name),
         "topics": topics, "countries": countries,
-        "link": link.get("href") if link else "",
+        "link": clean_link(link.get("href") if link else ""),
         "photo": copy_photo(data_image, slugify(name), photo_map),
         "group": group,
     }
@@ -159,6 +170,9 @@ def apply_enrichment(rec):
         rec["topics_source"] = e.get("source", "")
     if not rec["countries"] and e.get("countries"):
         rec["countries"] = e["countries"]
+    if not rec.get("link") and e.get("link"):
+        rec["link"] = e["link"]
+        rec["link_source"] = "researched"
     return rec
 
 

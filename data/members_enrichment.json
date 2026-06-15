@@ -5,5 +5,6 @@
   "dipa-sarkar": {"topics": ["Behavioural Economics", "Development Economics", "Labour Economics"], "countries": ["India", "Australia"], "source": "https://scholar.google.com.au/citations?user=V8jSliQAAAAJ", "confidence": "high"},
   "kompal-sinha": {"topics": ["Health Economics", "Development Economics", "Population Economics", "Applied Econometrics"], "countries": ["Australia", "India"], "source": "https://scholar.google.com.au/citations?user=Hs1Ao3QpW2YC", "confidence": "high"},
   "liang-c-wang": {"topics": ["Behavioural Economics", "Economics of Education", "Labour Economics", "Development Economics", "Public Economics", "Health Economics"], "countries": [], "source": "https://sites.google.com/site/liangchoonwang/home", "confidence": "high"},
-  "haishan-yuan": {"topics": ["Political Economy", "Development Economics", "Public Economics"], "countries": ["China", "United States", "Japan", "Bangladesh"], "source": "https://scholar.google.com/citations?user=WZCJp3YAAAAJ", "confidence": "high"}
+  "haishan-yuan": {"topics": ["Political Economy", "Development Economics", "Public Economics"], "countries": ["China", "United States", "Japan", "Bangladesh"], "source": "https://scholar.google.com/citations?user=WZCJp3YAAAAJ", "confidence": "high"},
+  "ricardo-dahis": {"link": "https://www.ricardodahis.com/", "source": "https://www.ricardodahis.com/", "confidence": "high"}
 }

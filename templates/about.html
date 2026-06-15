@@ -3,11 +3,15 @@
 
 <section class="section">
   <div class="wrap">
-    <span class="section-number">01</span>
-    <div style="max-width:44rem;" class="reveal">
-      <p class="eyebrow">About</p>
-      <h1>{{ page.heading }}</h1>
-      <p class="lede">{{ page.intro }}</p>
+    <div class="hero">
+      <div class="hero__text reveal">
+        <p class="eyebrow">About</p>
+        <h1>{{ page.heading }}</h1>
+        <p class="lede">{{ page.intro }}</p>
+      </div>
+      <div class="hero__media reveal">
+        <img src="{{ rel }}assets/images/{{ page.hero_image }}" alt="{{ page.hero_alt }}" loading="eager">
+      </div>
     </div>
   </div>
 </section>
@@ -26,15 +30,5 @@
     </ol>
   </div>
 </section>
-
-{% if page.figure %}
-<section class="section">
-  <div class="wrap">
-    <div class="article__figure reveal" style="max-width:var(--maxw-wide);">
-      <img src="{{ rel }}assets/images/{{ page.figure }}" alt="" loading="lazy">
-    </div>
-  </div>
-</section>
-{% endif %}
 
 {% endblock %}
