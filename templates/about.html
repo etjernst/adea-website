@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section">
+  <div class="wrap">
+    <span class="section-number">01</span>
+    <div style="max-width:44rem;" class="reveal">
+      <p class="eyebrow">About</p>
+      <h1>{{ page.heading }}</h1>
+      <p class="lede">{{ page.intro }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <p class="eyebrow">Our mission</p>
+    <h2>{{ page.mission_heading }}</h2>
+    <ol class="mission">
+      {% for item in page.mission %}
+      <li class="reveal">
+        <span class="n">{{ "%02d"|format(loop.index) }}</span>
+        <p>{{ item }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{% if page.figure %}
+<section class="section">
+  <div class="wrap">
+    <div class="article__figure reveal" style="max-width:var(--maxw-wide);">
+      <img src="{{ rel }}assets/images/{{ page.figure }}" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% endblock %}

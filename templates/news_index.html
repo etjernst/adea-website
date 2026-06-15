@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width:44rem;">
+      <p class="eyebrow">News and events</p>
+      <h1>{{ page.heading }}</h1>
+    </div>
+
+    {% if page.event %}
+    <div class="event reveal">
+      <div>
+        <p class="eyebrow">Upcoming</p>
+        <h3>{{ page.event.title }}</h3>
+        <p style="color:var(--slate);">{{ page.event.summary }}</p>
+        <p class="event__meta">{{ page.event.meta }}</p>
+        {% if page.event.link %}
+        <p style="margin-top:1rem;"><a class="read-more" href="{{ page.event.link }}">Registration &amp; program &#10230;</a></p>
+        {% endif %}
+      </div>
+      {% if page.event.image %}
+      <div class="event__media"><img src="{{ rel }}assets/images/{{ page.event.image }}" alt="" loading="lazy"></div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="news-list">
+      {% for post in news %}
+      <article class="news-item reveal">
+        <div class="news-item__media">
+          <img src="{{ rel }}assets/images/{{ post.hero_image }}" alt="" loading="lazy">
+        </div>
+        <div>
+          {% if post.date_display %}<div class="news-item__date">{{ post.date_display }}{% if post.author %} &middot; {{ post.author }}{% endif %}</div>{% endif %}
+          <h3><a href="{{ rel }}{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt }}</p>
+          <a class="read-more" href="{{ rel }}{{ post.url }}">Read more &#10230;</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width:48rem;">
+      <p class="eyebrow">Members</p>
+      <h1>{{ page.heading }}</h1>
+      <p class="lede">{{ page.intro }}</p>
+    </div>
+  </div>
+</section>
+
+{% if members_data.leadership %}
+<section class="section section--alt">
+  <div class="wrap">
+    <p class="eyebrow">Leadership</p>
+    <h2>{{ page.leadership_heading }}</h2>
+    <div class="member-grid member-grid--lead">
+      {% for m in members_data.leadership %}
+      {% include "partials/member_card.html" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="directory">
+  <div class="wrap">
+    <p class="eyebrow">Find an expert</p>
+    <h2>{{ page.directory_heading }}</h2>
+    <p style="max-width:42rem;color:var(--slate);">{{ page.directory_intro }}</p>
+
+    <form class="filters" id="member-filters" aria-label="Filter members" onsubmit="return false;">
+      <div class="filters__field">
+        <label for="f-search">Search</label>
+        <input type="search" id="f-search" placeholder="Name or institution&hellip;" autocomplete="off">
+      </div>
+      <div class="filters__field">
+        <label for="f-topic">Research topic</label>
+        <select id="f-topic">
+          <option value="">All topics</option>
+          {% for t in members_data.topics %}<option value="{{ t|lower }}">{{ t }}</option>{% endfor %}
+        </select>
+      </div>
+      <div class="filters__field">
+        <label for="f-country">Country / region</label>
+        <select id="f-country">
+          <option value="">All countries</option>
+          {% for c in members_data.countries %}<option value="{{ c|lower }}">{{ c }}</option>{% endfor %}
+        </select>
+      </div>
+      <button type="button" class="filters__clear" id="f-clear">Clear</button>
+    </form>
+
+    <p class="filters__count" id="member-count" aria-live="polite"></p>
+
+    <div class="member-grid" id="member-grid">
+      {% for m in members_data.members %}
+      {% include "partials/member_card.html" %}
+      {% endfor %}
+    </div>
+
+    <p class="member-empty" id="member-empty" hidden>No members match those filters. <button type="button" class="linklike" id="f-clear2">Clear filters</button></p>
+  </div>
+</section>
+
+{% if members_data.phd_students %}
+<section class="section section--alt">
+  <div class="wrap">
+    <p class="eyebrow">Early career</p>
+    <h2>{{ page.phd_heading }}</h2>
+    <div class="member-grid member-grid--lead">
+      {% for m in members_data.phd_students %}
+      {% include "partials/member_card.html" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% endblock %}

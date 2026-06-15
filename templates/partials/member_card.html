@@ -1,0 +1,27 @@
+<article class="member-card reveal"
+  data-search="{{ (m.name ~ ' ' ~ (m.institution | default(''))) | lower }}"
+  data-topics="{% for t in m.topics %}{{ t|lower }}|{% endfor %}"
+  data-countries="{% for c in m.countries %}{{ c|lower }}|{% endfor %}">
+  <div class="member-card__photo">
+    {% if m.photo %}
+    <img src="{{ rel }}assets/images/{{ m.photo }}" alt="{{ m.name }}" loading="lazy" width="420" height="420">
+    {% else %}
+    <span class="member-card__initials" aria-hidden="true">{{ m.name[:1] }}</span>
+    {% endif %}
+  </div>
+  <div class="member-card__body">
+    <h3 class="member-card__name">{{ m.name }}</h3>
+    <p class="member-card__affil">{{ m.role | default(m.institution) }}</p>
+    {% if m.topics %}
+    <ul class="tags">
+      {% for t in m.topics %}<li class="tag">{{ t }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if m.countries %}
+    <p class="member-card__countries"><span>Countries</span> {{ m.countries | join(', ') }}</p>
+    {% endif %}
+    {% if m.link %}
+    <a class="member-card__link" href="{{ m.link }}" target="_blank" rel="noopener">Profile &#10230;</a>
+    {% endif %}
+  </div>
+</article>

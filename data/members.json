@@ -1,0 +1,891 @@
+{
+  "leadership": [
+    {
+      "name": "Lisa Cameron",
+      "slug": "lisa-cameron",
+      "topics": [
+        "Impact Evaluation",
+        "Social Protection",
+        "Health"
+      ],
+      "countries": [
+        "Indonesia",
+        "China",
+        "Timor Leste"
+      ],
+      "link": "https://sites.google.com/view/lisa-a-cameron/home",
+      "photo": "members/lisa-cameron.jpg",
+      "group": "leadership",
+      "role": "President"
+    },
+    {
+      "name": "Shyamal Chowdhury",
+      "slug": "shyamal-chowdhury",
+      "topics": [],
+      "countries": [],
+      "link": "https://scholar.google.com/citations?hl=en&user=Yfgg4RoAAAAJ",
+      "photo": "members/shyamal-chowdhury.jpg",
+      "group": "leadership",
+      "role": "Secretary"
+    },
+    {
+      "name": "Astghik Mavisakalyan",
+      "slug": "astghik-mavisakalyan",
+      "topics": [],
+      "countries": [],
+      "link": "https://bcec.edu.au/about/people/astghik-mavisakalyan/",
+      "photo": "members/astghik-mavisakalyan.jpg",
+      "group": "leadership",
+      "role": "Public Officer"
+    }
+  ],
+  "members": [
+    {
+      "name": "Ian Anderson",
+      "slug": "ian-anderson",
+      "topics": [
+        "Impact Evaluation",
+        "Political Economy",
+        "Health"
+      ],
+      "countries": [
+        "South East Asia",
+        "Papua New Guinea",
+        "Pacific Island Countries",
+        "Philippines"
+      ],
+      "link": "https://img1.wsimg.com/blobby/go/f32c246f-01c4-4525-a4bb-b5ebd328fd15/downloads/CV%20Ian%20Anderson%202024.pdf?ver=1711084441236",
+      "photo": "members/ian-anderson.jpg",
+      "group": "members",
+      "institution": "Independent Researcher, AUS"
+    },
+    {
+      "name": "Rashmi Arora",
+      "slug": "rashmi-arora",
+      "topics": [
+        "Finance",
+        "Development Economics",
+        "Regional Growth",
+        "Financial Inclusion"
+      ],
+      "countries": [
+        "India",
+        "South Asia",
+        "Sub-Saharan Africa"
+      ],
+      "link": "https://www.bradford.ac.uk/staff/rarora6/",
+      "photo": "members/rashmi-arora.jpg",
+      "group": "members",
+      "institution": "University of Bradford, GBR"
+    },
+    {
+      "name": "Thang Bach",
+      "slug": "thang-bach",
+      "topics": [
+        "Gender",
+        "Governance",
+        "SMEs"
+      ],
+      "countries": [
+        "Vietnam",
+        "Southeast Asia",
+        "India"
+      ],
+      "link": "https://scholar.google.com/citations?hl=en&user=nydtUkcAAAAJ&view_op=list_works&sortby=pubdate",
+      "photo": "members/thang-bach.jpg",
+      "group": "members",
+      "institution": "National Economics University, VNM"
+    },
+    {
+      "name": "Jamilu Said Babangida",
+      "slug": "jamilu-said-babangida",
+      "topics": [
+        "Labour Markets",
+        "Health",
+        "Agriculture"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "Asia",
+        "Nigeria"
+      ],
+      "link": "https://steg.cepr.org/researchers-directory/jamilu-said-babangida",
+      "photo": "members/jamilu-said-babangida.jpg",
+      "group": "members",
+      "institution": "Griffith University, AUS"
+    },
+    {
+      "name": "Sarah Baird",
+      "slug": "sarah-baird",
+      "topics": [
+        "Adolescent Health",
+        "Well-being",
+        "Global Health",
+        "Gender"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "Bangladesh",
+        "Jordan"
+      ],
+      "link": "https://publichealth.gwu.edu/departments/global-health/sarah-baird",
+      "photo": "members/sarah-baird.jpg",
+      "group": "members",
+      "institution": "George Washington University, USA"
+    },
+    {
+      "name": "Rajabrata Banerjee",
+      "slug": "rajabrata-banerjee",
+      "topics": [
+        "Well-being",
+        "Mental Health",
+        "Crime",
+        "Corruption",
+        "Social Inclusion",
+        "Energy Poverty",
+        "Foreign Aid Effectiveness"
+      ],
+      "countries": [
+        "Australia",
+        "India",
+        "South East Asia"
+      ],
+      "link": "https://people.unisa.edu.au/rajabrata.banerjee",
+      "photo": "members/rajabrata-banerjee.jpg",
+      "group": "members",
+      "institution": "University of South Australia, AUS"
+    },
+    {
+      "name": "Victoria Baranov",
+      "slug": "victoria-baranov",
+      "topics": [
+        "Health",
+        "Mental Health",
+        "Child Development",
+        "Gender",
+        "Norms"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "Southeast Asia",
+        "Pakistan"
+      ],
+      "link": "https://sites.google.com/site/victoriabaranov/home",
+      "photo": "members/victoria-baranov.jpg",
+      "group": "members",
+      "institution": "The University of Melbourne, AUS"
+    },
+    {
+      "name": "Nadezhda Baryshnikova",
+      "slug": "nadezhda-baryshnikova",
+      "topics": [
+        "Well-being",
+        "Mental Health",
+        "Environmental Economics",
+        "Child Development",
+        "Gender"
+      ],
+      "countries": [
+        "Indonesia",
+        "China",
+        "Southeast Asia",
+        "Africa"
+      ],
+      "link": "https://researchers.adelaide.edu.au/profile/nadezhda.baryshnikova",
+      "photo": "members/nadezhda-baryshnikova.jpg",
+      "group": "members",
+      "institution": "The University of Adelaide, AUS"
+    },
+    {
+      "name": "Diana Contreras",
+      "slug": "diana-contreras",
+      "topics": [
+        "Social Protection",
+        "Child Development",
+        "Health",
+        "Impact Evaluation"
+      ],
+      "countries": [
+        "Indonesia",
+        "Timor-Leste",
+        "Pacific"
+      ],
+      "link": "https://sites.google.com/site/dianacontreras1/home",
+      "photo": "members/diana-contreras.jpg",
+      "group": "members",
+      "institution": "The University of Melbourne, AUS"
+    },
+    {
+      "name": "Ricardo Dahis",
+      "slug": "ricardo-dahis",
+      "topics": [
+        "Political Economy",
+        "Environmental Economics",
+        "Labour Markets"
+      ],
+      "countries": [
+        "Brazil",
+        "India",
+        "Philippines"
+      ],
+      "link": "/",
+      "photo": "members/ricardo-dahis.jpg",
+      "group": "members",
+      "institution": "Monash University, AUS"
+    },
+    {
+      "name": "Adeline Delavande",
+      "slug": "adeline-delavande",
+      "topics": [
+        "Expectations",
+        "Child Development",
+        "Health"
+      ],
+      "countries": [
+        "Malawi",
+        "Pakistan",
+        "Solomon Islands"
+      ],
+      "link": "https://sites.google.com/site/aldelaresearch/",
+      "photo": "members/adeline-delavande.jpg",
+      "group": "members",
+      "institution": "The University of Technology Sydney, AUS"
+    },
+    {
+      "name": "Lakmini Fernando",
+      "slug": "lakmini-fernando",
+      "topics": [
+        "Climate Change",
+        "Public Finance"
+      ],
+      "countries": [
+        "Sri Lanka",
+        "South Asia",
+        "East Asia"
+      ],
+      "link": "https://www.ips.lk/research-staff/lakmini-fernando/",
+      "photo": "members/lakmini-fernando.jpg",
+      "group": "members",
+      "institution": "Institute of Policy Studies of Sri Lanka, LKA"
+    },
+    {
+      "name": "Esther Mirjam Girsberger",
+      "slug": "esther-mirjam-girsberger",
+      "topics": [
+        "Labour Markets",
+        "Public Policy",
+        "Gender"
+      ],
+      "countries": [
+        "Sub-Saharan Africa (esp. West Africa)",
+        "South America"
+      ],
+      "link": "https://emgirsberger.weebly.com",
+      "photo": "members/esther-mirjam-girsberger.jpg",
+      "group": "members",
+      "institution": "The University of Technology Sydney, AUS"
+    },
+    {
+      "name": "Rohan Gudibande",
+      "slug": "rohan-gudibande",
+      "topics": [
+        "Political Economy",
+        "Conflict",
+        "Migration"
+      ],
+      "countries": [
+        "India",
+        "Sri Lanka",
+        "EU",
+        "Switzerland"
+      ],
+      "link": "https://sites.google.com/site/rohanravindragudibande",
+      "photo": "members/rohan-gudibande.jpg",
+      "group": "members",
+      "institution": "Krea University, IND"
+    },
+    {
+      "name": "Masyhur Hilmy",
+      "slug": "masyhur-hilmy",
+      "topics": [
+        "Education",
+        "Migration",
+        "Political Economy"
+      ],
+      "countries": [
+        "Indonesia"
+      ],
+      "link": "https://sites.google.com/view/masyhurhilmy",
+      "photo": "members/masyhur-hilmy.jpg",
+      "group": "members",
+      "institution": "University of New South Wales, AUS"
+    },
+    {
+      "name": "Christopher Hoy",
+      "slug": "christopher-hoy",
+      "topics": [
+        "Public finance",
+        "Policy Perceptions",
+        "Preferences",
+        "Labour Markets"
+      ],
+      "countries": [
+        "Southeast Asia",
+        "PNG",
+        "the Pacific",
+        "Sub-Saharan Africa"
+      ],
+      "link": "https://chrishoyeconomist.com/",
+      "photo": "members/christopher-hoy.jpg",
+      "group": "members",
+      "institution": "World Bank Group"
+    },
+    {
+      "name": "Maneka Jayasinghe",
+      "slug": "maneka-jayasinghe",
+      "topics": [
+        "Poverty",
+        "Well-being",
+        "Energy",
+        "Gender"
+      ],
+      "countries": [
+        "Sri Lanka",
+        "South Asia"
+      ],
+      "link": "https://researchers.cdu.edu.au/en/persons/maneka-jayasinghe",
+      "photo": "members/maneka-jayasinghe.jpg",
+      "group": "members",
+      "institution": "Charles Darwin University, AUS"
+    },
+    {
+      "name": "Firman Witoelar Kartaadipoetra",
+      "slug": "firman-witoelar-kartaadipoetra",
+      "topics": [
+        "Health",
+        "Population",
+        "Ageing",
+        "Social Inclusion",
+        "Migration"
+      ],
+      "countries": [
+        "Indonesia",
+        "Southeast Asia",
+        "Pacific"
+      ],
+      "link": "https://researchportalplus.anu.edu.au/en/persons/firman-kartaadipoetra",
+      "photo": "members/firman-witoelar-kartaadipoetra.jpg",
+      "group": "members",
+      "institution": "The Australian National University, AUS"
+    },
+    {
+      "name": "Ananta Neelim",
+      "slug": "ananta-neelim",
+      "topics": [
+        "Behavioural Development Economics",
+        "Economic Evaluation"
+      ],
+      "countries": [
+        "Bangladesh",
+        "South Asia",
+        "South East Asia"
+      ],
+      "link": "https://discover.utas.edu.au/Ananta.Neelim",
+      "photo": "members/ananta-neelim.jpg",
+      "group": "members",
+      "institution": "University of Tasmania, AUS"
+    },
+    {
+      "name": "Debdulal Mallick",
+      "slug": "debdulal-mallick",
+      "topics": [
+        "Macroeconomics",
+        "Development Economics"
+      ],
+      "countries": [
+        "Bangladesh",
+        "India"
+      ],
+      "link": "https://scholar.google.com/citations?user=zggTABYAAAAJ",
+      "photo": "members/debdulal-mallick.jpg",
+      "group": "members",
+      "institution": "Deakin University, AUS",
+      "topics_source": "https://scholar.google.com/citations?user=zggTABYAAAAJ"
+    },
+    {
+      "name": "Xin Meng",
+      "slug": "xin-meng",
+      "topics": [
+        "Labour Economics",
+        "Development Economics",
+        "Economics of Education",
+        "Chinese Economy"
+      ],
+      "countries": [
+        "China",
+        "Australia"
+      ],
+      "link": "https://scholar.google.com.au/citations?hl=en&user=4TPHcmUAAAAJ",
+      "photo": "members/xin-meng.jpg",
+      "group": "members",
+      "institution": "The Australian National University, AUS",
+      "topics_source": "https://scholar.google.com.au/citations?user=4TPHcmUAAAAJ"
+    },
+    {
+      "name": "Berk Ozler",
+      "slug": "berk-ozler",
+      "topics": [
+        "Cash Transfers",
+        "Adolescent Health",
+        "SRH/Family Planning"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "New Zealand",
+        "Pacific Islands"
+      ],
+      "link": "https://sites.google.com/site/decrgberkozler/home",
+      "photo": "members/berk-ozler.jpg",
+      "group": "members",
+      "institution": "World Bank Group"
+    },
+    {
+      "name": "Alberto Posso",
+      "slug": "alberto-posso",
+      "topics": [
+        "Child labour",
+        "Health",
+        "Poverty"
+      ],
+      "countries": [
+        "Latin America",
+        "East Asia",
+        "Pacific Island Countries"
+      ],
+      "link": "https://sites.google.com/view/alberto-posso/home",
+      "photo": "members/alberto-posso.jpg",
+      "group": "members",
+      "institution": "Griffith University, AUS"
+    },
+    {
+      "name": "Christopher Parsons",
+      "slug": "christopher-parsons",
+      "topics": [
+        "Migration",
+        "Poverty",
+        "Conflict"
+      ],
+      "countries": [
+        "Sub-Saharan Africa (esp. Sierra Leone)",
+        "Southeast Asia",
+        "South America"
+      ],
+      "link": "https://christopherparsons.weebly.com",
+      "photo": "members/christopher-parsons.jpg",
+      "group": "members",
+      "institution": "The University of Western Australia, AUS"
+    },
+    {
+      "name": "Paul Raschky",
+      "slug": "paul-raschky",
+      "topics": [
+        "Political Economy",
+        "Conflict",
+        "Natural Disasters"
+      ],
+      "countries": [
+        "Africa"
+      ],
+      "link": "https://praschky.github.io/",
+      "photo": "members/paul-raschky.jpg",
+      "group": "members",
+      "institution": "Monash University, AUS"
+    },
+    {
+      "name": "Dipa Sarkar",
+      "slug": "dipa-sarkar",
+      "topics": [
+        "Behavioural Economics",
+        "Development Economics",
+        "Labour Economics"
+      ],
+      "countries": [
+        "India",
+        "Australia"
+      ],
+      "link": "https://sites.google.com/site/dipanwitadsarkar/",
+      "photo": "members/dipa-sarkar.jpg",
+      "group": "members",
+      "institution": "Queensland University of Technology, AUS",
+      "topics_source": "https://scholar.google.com.au/citations?user=V8jSliQAAAAJ"
+    },
+    {
+      "name": "Jayanta Sarkar",
+      "slug": "jayanta-sarkar",
+      "topics": [
+        "Household decision-making",
+        "Health behavior",
+        "Education",
+        "Inequality"
+      ],
+      "countries": [
+        "Southeast Asia"
+      ],
+      "link": "https://sites.google.com/view/jayantasarkar/home",
+      "photo": "members/jayanta-sarkar.jpg",
+      "group": "members",
+      "institution": "Queensland University of Technology, AUS"
+    },
+    {
+      "name": "Kompal Sinha",
+      "slug": "kompal-sinha",
+      "topics": [
+        "Health",
+        "Development Economics",
+        "Population Economics",
+        "Applied Econometrics"
+      ],
+      "countries": [
+        "Australia",
+        "India"
+      ],
+      "link": "https://sites.google.com/site/kompalsinha/home",
+      "photo": "members/kompal-sinha.jpg",
+      "group": "members",
+      "institution": "Macquarie University, AUS",
+      "topics_source": "https://scholar.google.com.au/citations?user=Hs1Ao3QpW2YC"
+    },
+    {
+      "name": "Emilia Tjernstrom",
+      "slug": "emilia-tjernstrom",
+      "topics": [
+        "Agriculture",
+        "Competition",
+        "Climate Change"
+      ],
+      "countries": [
+        "Kenya",
+        "Nigeria",
+        "Fiji",
+        "Indonesia",
+        "Nicaragua"
+      ],
+      "link": "https://emiliatjernstrom.com",
+      "photo": "members/emilia-tjernstrom.jpg",
+      "group": "members",
+      "institution": "Macquarie Business School, AUS"
+    },
+    {
+      "name": "Russell Toth",
+      "slug": "russell-toth",
+      "topics": [
+        "Private Sector Development",
+        "Development Finance"
+      ],
+      "countries": [
+        "Southeast Asia",
+        "Pacific",
+        "South Asia"
+      ],
+      "link": "https://sites.google.com/cornell.edu/russell-toth/russell-toth-development-economist",
+      "photo": "members/russell-toth.jpg",
+      "group": "members",
+      "institution": "The University of Sydney, AUS"
+    },
+    {
+      "name": "David Ubilava",
+      "slug": "david-ubilava",
+      "topics": [
+        "Agriculture",
+        "Climate Change",
+        "Conflict",
+        "Prices"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "Southeast Asia",
+        "India"
+      ],
+      "link": "https://davidubilava.com/",
+      "photo": "members/david-ubilava.jpg",
+      "group": "members",
+      "institution": "The University of Sydney, AUS"
+    },
+    {
+      "name": "Dong Wang",
+      "slug": "dong-wang",
+      "topics": [
+        "Development Economics",
+        "Agriculture",
+        "Resource Economics",
+        "New Structural Economics"
+      ],
+      "countries": [
+        "Australia",
+        "China",
+        "Pakistan"
+      ],
+      "link": "https://scholar.google.com/citations?user=8IyznysAAAAJ&hl",
+      "photo": "members/dong-wang.jpg",
+      "group": "members",
+      "institution": "The Australian National University, AUS"
+    },
+    {
+      "name": "Liang C Wang",
+      "slug": "liang-c-wang",
+      "topics": [
+        "Behavioural Economics",
+        "Economics of Education",
+        "Labour Economics",
+        "Development Economics",
+        "Public Economics",
+        "Health"
+      ],
+      "countries": [],
+      "link": "https://sites.google.com/site/liangchoonwang/home",
+      "photo": "members/liang-c-wang.jpg",
+      "group": "members",
+      "institution": "Monash University, AUS",
+      "topics_source": "https://sites.google.com/site/liangchoonwang/home"
+    },
+    {
+      "name": "Sarah Walker",
+      "slug": "sarah-walker",
+      "topics": [
+        "Culture",
+        "Institutions",
+        "Economic History",
+        "Environmental Economics",
+        "Human Capital"
+      ],
+      "countries": [],
+      "link": "https://sites.google.com/site/sarahwalkereconomics/home",
+      "photo": "members/sarah-walker.jpg",
+      "group": "members",
+      "institution": "University of New South Wales, AUS"
+    },
+    {
+      "name": "Longfeng Ye",
+      "slug": "longfeng-ye",
+      "topics": [
+        "Growth",
+        "Trade",
+        "Agriculture"
+      ],
+      "countries": [
+        "China",
+        "Indonesia",
+        "Southeast Asia"
+      ],
+      "link": "https://academics.rmit.edu.au/longfeng-ye/publications",
+      "photo": "members/longfeng-ye.jpg",
+      "group": "members",
+      "institution": "RMIT University, AUS"
+    },
+    {
+      "name": "Haishan Yuan",
+      "slug": "haishan-yuan",
+      "topics": [
+        "Political Economy",
+        "Development Economics",
+        "Public Economics"
+      ],
+      "countries": [
+        "China",
+        "United States",
+        "Japan",
+        "Bangladesh"
+      ],
+      "link": "https://haishan-yuan.weebly.com",
+      "photo": "members/haishan-yuan.jpg",
+      "group": "members",
+      "institution": "The University of Queensland, AUS",
+      "topics_source": "https://scholar.google.com/citations?user=WZCJp3YAAAAJ"
+    }
+  ],
+  "phd_students": [
+    {
+      "name": "Kwabena Addai",
+      "slug": "kwabena-addai",
+      "topics": [
+        "Health",
+        "Energy Economics",
+        "Food Security",
+        "Nutrition",
+        "Poverty",
+        "Gender"
+      ],
+      "countries": [
+        "Sub-Saharan Africa",
+        "Southeast Asia"
+      ],
+      "link": "https://scholar.google.com/citations?user=QYmFCWYAAAAJ",
+      "photo": "members/kwabena-addai.jpg",
+      "group": "phd_students",
+      "institution": "Griffith University"
+    },
+    {
+      "name": "Lolita Moorena",
+      "slug": "lolita-moorena",
+      "topics": [
+        "Female Labour Supply",
+        "Education",
+        "Financial Inclusion",
+        "Digital Technology"
+      ],
+      "countries": [
+        "Indonesia"
+      ],
+      "link": "https://rse.anu.edu.au/about/staff-directory/lolita-moorena",
+      "photo": "members/lolita-moorena.jpg",
+      "group": "phd_students",
+      "institution": "The Australian National University"
+    },
+    {
+      "name": "Mohammad Nure Alam",
+      "slug": "mohammad-nure-alam",
+      "topics": [
+        "Health",
+        "Social Protection",
+        "Disability",
+        "Labour Markets",
+        "Income Dynamics"
+      ],
+      "countries": [
+        "Australia",
+        "United States of America",
+        "United Kingdom"
+      ],
+      "link": "https://researchers.mq.edu.au/en/persons/mohammad-alam",
+      "photo": "members/mohammad-nure-alam.jpg",
+      "group": "phd_students",
+      "institution": "Macquarie University"
+    }
+  ],
+  "topics": [
+    "Adolescent Health",
+    "Ageing",
+    "Agriculture",
+    "Applied Econometrics",
+    "Behavioural Development Economics",
+    "Behavioural Economics",
+    "Cash Transfers",
+    "Child Development",
+    "Child labour",
+    "Chinese Economy",
+    "Climate Change",
+    "Competition",
+    "Conflict",
+    "Corruption",
+    "Crime",
+    "Culture",
+    "Development Economics",
+    "Development Finance",
+    "Digital Technology",
+    "Disability",
+    "Economic Evaluation",
+    "Economic History",
+    "Economics of Education",
+    "Education",
+    "Energy",
+    "Energy Economics",
+    "Energy Poverty",
+    "Environmental Economics",
+    "Expectations",
+    "Female Labour Supply",
+    "Finance",
+    "Financial Inclusion",
+    "Food Security",
+    "Foreign Aid Effectiveness",
+    "Gender",
+    "Global Health",
+    "Governance",
+    "Growth",
+    "Health",
+    "Health behavior",
+    "Household decision-making",
+    "Human Capital",
+    "Impact Evaluation",
+    "Income Dynamics",
+    "Inequality",
+    "Institutions",
+    "Labour Economics",
+    "Labour Markets",
+    "Macroeconomics",
+    "Mental Health",
+    "Migration",
+    "Natural Disasters",
+    "New Structural Economics",
+    "Norms",
+    "Nutrition",
+    "Policy Perceptions",
+    "Political Economy",
+    "Population",
+    "Population Economics",
+    "Poverty",
+    "Preferences",
+    "Prices",
+    "Private Sector Development",
+    "Public Economics",
+    "Public Finance",
+    "Public Policy",
+    "Regional Growth",
+    "Resource Economics",
+    "SMEs",
+    "Social Inclusion",
+    "Social Protection",
+    "SRH/Family Planning",
+    "Trade",
+    "Well-being"
+  ],
+  "countries": [
+    "Africa",
+    "Asia",
+    "Australia",
+    "Bangladesh",
+    "Brazil",
+    "China",
+    "East Asia",
+    "EU",
+    "Fiji",
+    "India",
+    "Indonesia",
+    "Japan",
+    "Jordan",
+    "Kenya",
+    "Latin America",
+    "Malawi",
+    "New Zealand",
+    "Nicaragua",
+    "Nigeria",
+    "Pacific",
+    "Pacific Island Countries",
+    "Pacific Islands",
+    "Pakistan",
+    "Papua New Guinea",
+    "Philippines",
+    "PNG",
+    "Solomon Islands",
+    "South America",
+    "South Asia",
+    "South East Asia",
+    "Southeast Asia",
+    "Sri Lanka",
+    "Sub-Saharan Africa",
+    "Sub-Saharan Africa (esp. Sierra Leone)",
+    "Sub-Saharan Africa (esp. West Africa)",
+    "Switzerland",
+    "the Pacific",
+    "Timor Leste",
+    "Timor-Leste",
+    "United Kingdom",
+    "United States",
+    "United States of America",
+    "Vietnam"
+  ],
+  "counts": {
+    "leadership": 3,
+    "members": 36,
+    "phd_students": 3
+  }
+}

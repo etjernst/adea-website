@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<article class="article">
+  <div class="wrap">
+   <div class="article__col">
+    <div class="article__head reveal">
+      <div class="article__meta">
+        <a href="{{ rel }}news.html">News and events</a>
+        {% if page.date_display %} &middot; {{ page.date_display }}{% endif %}
+        {% if page.author %} &middot; {{ page.author }}{% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+    </div>
+
+    {% if page.figure %}
+    <figure class="article__figure reveal">
+      <img src="{{ rel }}assets/images/{{ page.figure }}" alt="{{ page.figure_alt | default('') }}" loading="lazy">
+      {% if page.figure_caption or page.figure_credit %}
+      <figcaption>{{ page.figure_caption }}{% if page.figure_credit %} &mdash; {{ page.figure_credit }}{% endif %}</figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
+
+    <div class="article__body reveal">
+      {{ body | safe }}
+    </div>
+
+    <nav class="article-nav">
+      <span>{% if page.prev %}<a href="{{ rel }}{{ page.prev.url }}">&#10229; {{ page.prev.title }}</a>{% endif %}</span>
+      <span>{% if page.next %}<a href="{{ rel }}{{ page.next.url }}">{{ page.next.title }} &#10230;</a>{% endif %}</span>
+    </nav>
+   </div>
+  </div>
+</article>
+
+{% endblock %}

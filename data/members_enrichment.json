@@ -1,0 +1,9 @@
+{
+  "_note": "Topics/countries researched from members' own Google Scholar verified-interest tags and official profile pages, for members whose ADEA entry listed none. Merged only into empty fields; never overwrites stated data. Source URL recorded per entry. Pending member confirmation via the planned call for profiles.",
+  "debdulal-mallick": {"topics": ["Macroeconomics", "Development Economics"], "countries": ["Bangladesh", "India"], "source": "https://scholar.google.com/citations?user=zggTABYAAAAJ", "confidence": "high"},
+  "xin-meng": {"topics": ["Labour Economics", "Development Economics", "Economics of Education", "Chinese Economy"], "countries": ["China", "Australia"], "source": "https://scholar.google.com.au/citations?user=4TPHcmUAAAAJ", "confidence": "high"},
+  "dipa-sarkar": {"topics": ["Behavioural Economics", "Development Economics", "Labour Economics"], "countries": ["India", "Australia"], "source": "https://scholar.google.com.au/citations?user=V8jSliQAAAAJ", "confidence": "high"},
+  "kompal-sinha": {"topics": ["Health Economics", "Development Economics", "Population Economics", "Applied Econometrics"], "countries": ["Australia", "India"], "source": "https://scholar.google.com.au/citations?user=Hs1Ao3QpW2YC", "confidence": "high"},
+  "liang-c-wang": {"topics": ["Behavioural Economics", "Economics of Education", "Labour Economics", "Development Economics", "Public Economics", "Health Economics"], "countries": [], "source": "https://sites.google.com/site/liangchoonwang/home", "confidence": "high"},
+  "haishan-yuan": {"topics": ["Political Economy", "Development Economics", "Public Economics"], "countries": ["China", "United States", "Japan", "Bangladesh"], "source": "https://scholar.google.com/citations?user=WZCJp3YAAAAJ", "confidence": "high"}
+}

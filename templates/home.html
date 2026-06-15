@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}{{ site.name }} — development economics in Australasia{% endblock %}
+{% block content %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Australasian Development Economics Association</p>
+        <h1 class="hero__title">{{ page.hero_title | safe }}</h1>
+        <p class="lede">{{ page.lede }}</p>
+        <p style="margin-top:1.8rem;">
+          <a class="btn btn--accent" href="#join">Join the association &#10230;</a>
+        </p>
+      </div>
+      <div class="hero__media reveal">
+        <img src="{{ rel }}assets/images/{{ page.hero_image }}" alt="{{ page.hero_alt }}" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if page.quote %}
+<section class="quote-band">
+  <div class="wrap">
+    <blockquote class="reveal">
+      <p>&ldquo;{{ page.quote }}&rdquo;</p>
+      <cite>{{ page.quote_cite }}</cite>
+    </blockquote>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--alt">
+  <div class="wrap">
+    <span class="section-number">01</span>
+    <p class="eyebrow">Latest</p>
+    <h2>News and events</h2>
+    <div class="news-list">
+      {% for post in news[:2] %}
+      <article class="news-item reveal">
+        <div class="news-item__media">
+          <img src="{{ rel }}assets/images/{{ post.hero_image }}" alt="" loading="lazy">
+        </div>
+        <div>
+          {% if post.date_display %}<div class="news-item__date">{{ post.date_display }}</div>{% endif %}
+          <h3><a href="{{ rel }}{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt }}</p>
+          <a class="read-more" href="{{ rel }}{{ post.url }}">Read more &#10230;</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p style="margin-top:2rem;"><a class="read-more" href="{{ rel }}news.html">All news and events &#10230;</a></p>
+  </div>
+</section>
+
+{% endblock %}
