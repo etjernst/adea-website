@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width:46rem;">
+      <p class="eyebrow">Research stories</p>
+      <h1>{{ page.heading }}</h1>
+      <p class="lede">{{ page.intro }}</p>
+    </div>
+
+    <div class="story-list">
+      {% for s in stories %}
+      <a class="story-card reveal" href="{{ rel }}{{ s.url }}">
+        <div class="story-card__meta">
+          {% if s.date_display %}{{ s.date_display }}{% endif %}
+          {% if s.authors %} &middot; {% for a in s.authors %}{{ a.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+        </div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.standfirst | default(s.excerpt) }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

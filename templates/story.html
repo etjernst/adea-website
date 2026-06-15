@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<article class="story">
+  <div class="wrap">
+   <div class="story__col">
+
+    <header class="story__hero reveal">
+      <p class="eyebrow">Research story</p>
+      <h1 class="story__title">{{ page.title }}</h1>
+      <p class="story__standfirst">{{ page.standfirst }}</p>
+      <div class="story__byline">
+        {% for a in page.authors %}<strong>{{ a.name }}</strong>{% if a.affil %} ({{ a.affil }}){% endif %}{% if not loop.last %} and {% endif %}{% endfor %}
+        {% if page.date_display %}<br><span class="date">{{ page.date_display }}</span>{% endif %}
+      </div>
+      {% if page.tags %}
+      <div class="story__tags">
+        {% for t in page.tags %}<span class="story__tag">{{ t }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    {% if page.stats %}
+    <div class="stat-grid reveal">
+      {% for s in page.stats %}
+      <div class="stat">
+        <div class="stat__value">{{ s.value }}</div>
+        <div class="stat__label">{{ s.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.budget_bar %}
+    {% set total = page.budget_bar.segments | sum(attribute='value') %}
+    <div class="bar-block reveal">
+      <div class="bar-block__title">{{ page.budget_bar.title }}</div>
+      <div class="bar">
+        {% for seg in page.budget_bar.segments %}
+        <div style="width: {{ (seg.value / total * 100) | round(1) }}%; background: {{ seg.color }};">{{ seg.label }}</div>
+        {% endfor %}
+      </div>
+      <div class="bar__legend">
+        {% for seg in page.budget_bar.segments %}
+        <span><i style="background: {{ seg.color }};"></i>{{ seg.label }} &middot; {{ page.budget_bar.unit }}{{ seg.value }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="story__body reveal">
+      {{ body | safe }}
+    </div>
+
+    {% if page.pull_quote %}
+    <blockquote class="pullquote reveal">
+      <p>&ldquo;{{ page.pull_quote }}&rdquo;</p>
+    </blockquote>
+    {% endif %}
+
+    <div class="story__source reveal">
+      <h4>About this research</h4>
+      {% if page.paper_url %}<p>Read the full discussion paper: <a href="{{ page.paper_url }}">{{ page.paper_title | default('discussion paper') }}</a>.</p>{% endif %}
+      {% if page.source_url %}<p>This story first appeared at <a href="{{ page.source_url }}">{{ page.source_name | default(page.source_url) }}</a> and is shared with the authors' permission.</p>{% endif %}
+      {% if page.funding %}<p>{{ page.funding }}</p>{% endif %}
+    </div>
+
+    <nav class="article-nav">
+      <span><a href="{{ rel }}stories.html">&#10229; All research stories</a></span>
+      <span></span>
+    </nav>
+
+   </div>
+  </div>
+</article>
+
+{% endblock %}

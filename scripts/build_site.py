@@ -114,12 +114,32 @@ def load_members():
     return {"leadership": [], "members": [], "topics": [], "countries": []}
 
 
-def render_page(meta, body, out_relpath, news=None, members_data=None):
+def load_stories():
+    """Load research stories, newest first, with url/date_display/excerpt."""
+    stories = []
+    sdir = os.path.join(CONTENT, "stories")
+    if not os.path.isdir(sdir):
+        return stories
+    for fn in os.listdir(sdir):
+        if not fn.endswith(".md"):
+            continue
+        meta, body = parse_frontmatter(os.path.join(sdir, fn))
+        slug = os.path.splitext(fn)[0]
+        meta["url"] = f"stories/{slug}.html"
+        meta["body"] = body
+        meta["date_display"] = display_date(meta.get("date"))
+        meta.setdefault("excerpt", first_paragraph(body))
+        stories.append(meta)
+    stories.sort(key=lambda p: str(p.get("date", "")), reverse=True)
+    return stories
+
+
+def render_page(meta, body, out_relpath, news=None, members_data=None, stories=None):
     template = env.get_template(meta["template"] + ".html")
     html = template.render(
         site=SITE, page=meta, body=render_body(body),
-        news=news or [], members_data=members_data or {}, year=YEAR,
-        rel=rel_for(out_relpath),
+        news=news or [], members_data=members_data or {}, stories=stories or [],
+        year=YEAR, rel=rel_for(out_relpath),
     )
     write(out_relpath, html)
 
@@ -131,16 +151,23 @@ def main():
 
     news = load_news()
     members_data = load_members()
+    stories = load_stories()
+    ctx = dict(news=news, members_data=members_data, stories=stories)
 
     # top-level pages
     for fn, out in [("home.md", "index.html"), ("about.md", "about.html"),
-                    ("news.md", "news.html"), ("members.md", "members.html")]:
+                    ("news.md", "news.html"), ("members.md", "members.html"),
+                    ("stories.md", "stories.html")]:
         meta, body = parse_frontmatter(os.path.join(CONTENT, fn))
-        render_page(meta, body, out, news=news, members_data=members_data)
+        render_page(meta, body, out, **ctx)
 
     # news posts
     for p in news:
-        render_page(p, p["body"], p["url"], news=news)
+        render_page(p, p["body"], p["url"], **ctx)
+
+    # research stories
+    for s in stories:
+        render_page(s, s["body"], s["url"], **ctx)
 
     # static assets
     shutil.copytree(ASSETS, os.path.join(OUT, "assets"), dirs_exist_ok=True)

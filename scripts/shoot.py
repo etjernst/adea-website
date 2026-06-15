@@ -14,6 +14,8 @@ PAGES = [
     ("_site/news.html", "news.png", 1900),
     ("_site/news/welcome.html", "welcome.png", 1800),
     ("_site/members.html", "members.png", 3200),
+    ("_site/stories.html", "stories.png", 1400),
+    ("_site/stories/palm-workers.html", "story.png", 3200),
 ]
 
 for rel, out, h in PAGES:
